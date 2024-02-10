@@ -27,7 +27,7 @@ const Home = () => {
             className="h1"
           >
             Turning Complexity <br /> Into{" "}
-            <span className="text-accent">Elgance</span>
+            <span className="text-accent">Elegance</span>
           </motion.h1>
 
           {/* subtitle  */}
