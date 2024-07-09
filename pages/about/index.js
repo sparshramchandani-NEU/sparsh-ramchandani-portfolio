@@ -72,12 +72,8 @@ const aboutData = [
     title: "education",
     info: [
       {
-        title: "Northeaster University, Boston, MA",
+        title: "Northeastern University, Boston, MA",
         stage: "September 2022 - May 2024",
-      },
-      {
-        title: "Mumbai University, Mumbai, India",
-        stage: "2016 - 2019",
       },
     ],
   },
@@ -85,7 +81,7 @@ const aboutData = [
     title: "experience",
     info: [
       {
-        title: "Sofwtare Engineer, Samsung",
+        title: "Software Engineer, Samsung",
         stage: "August 2019 - August 2022",
       },
     ],
