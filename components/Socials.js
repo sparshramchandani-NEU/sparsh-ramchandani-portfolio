@@ -14,7 +14,7 @@ const Socials = () => {
       <Link href={"https://github.com/sparshramchandani-NEU"} className="hover:text-accent transition-all duration-300">
         <RiGithubFill />
       </Link>
-      <Link href={`mailto:${'ramchandanisparshis@gmail.com'}`} className="hover:text-accent transition-all duration-300">
+      <Link href={`mailto:${'sparshghanshyamdasramchandani@gmail.com'}`} className="hover:text-accent transition-all duration-300">
         <BiLogoGmail />
       </Link>
     </div>
