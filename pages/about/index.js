@@ -75,14 +75,30 @@ const aboutData = [
         title: "Northeastern University, Boston, MA",
         stage: "September 2022 - May 2024",
       },
+       {
+        title: "University Of Mumbai",
+        stage: "2017 - 2021",
+      },
     ],
   },
   {
     title: "experience",
     info: [
       {
+        title: "Software Engineer, Bright Minds Enrichment",
+        stage: "September 2024 - Present",
+      },
+      {
+        title: "Program Assistant, Northeastern University",
+        stage: "September 2023 - May 2024",
+      },
+      {
         title: "Software Engineer, Samsung",
-        stage: "August 2019 - August 2022",
+        stage: "October 2021 - August 2022",
+      },
+      {
+        title: "DevOps Engineer, Ultra Instruments & Controls",
+        stage: "October 2019 - October 2020",
       },
     ],
   },
