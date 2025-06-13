@@ -4,7 +4,7 @@ import axios from 'axios';
 // Portfolio information for context - REPLACE WITH YOUR ACTUAL INFO
 const portfolioInfo = `
 NAME: Sparsh Ghanshyamdas Ramchandani  
-Role: DevOps & Software Engineer  
+Role: DevOps & Software Engineer & Integration Engineer
 Location: United States  
 Email: sparshghanshyamdasramchandani@gmail.com  
 Phone: 617-467-8533  
