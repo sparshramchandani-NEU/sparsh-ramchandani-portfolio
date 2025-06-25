@@ -85,7 +85,7 @@ const aboutData = [
     title: "experience",
     info: [
       {
-        title: "Fullstack Engineer, Bright Minds Enrichment",
+        title: "Software Test Engineer, Bright Minds Enrichment",
         stage: "September 2024 - Present",
       },
       {
@@ -93,11 +93,11 @@ const aboutData = [
         stage: "September 2023 - May 2024",
       },
       {
-        title: "Fullstack Engineer, Samsung",
+        title: "Software Test Engineer, Samsung",
         stage: "October 2021 - August 2022",
       },
       {
-        title: "Fullstack Engineer, Ultra Instruments & Controls",
+        title: "Software Test Engineer, Ultra Instruments & Controls",
         stage: "October 2019 - October 2020",
       },
     ],
