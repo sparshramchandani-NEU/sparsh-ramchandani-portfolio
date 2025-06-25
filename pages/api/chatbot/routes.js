@@ -15,6 +15,7 @@ I architect robust, scalable systems where DevOps best practices and modern soft
 
 SKILLS:  
 Frontend: React.js, JavaScript  
+Testing Tools: Selenium, Cypress, Postman, Pytest, Jira
 Backend: Node.js, Java, Go, FastAPI, Spring Boot, Gorm, Gin, Django, Hibernate  
 Cloud & DevOps: AWS, GCP, Azure, Kubernetes (AKS, EKS), Docker, Terraform, Pulumi, Jenkins, ArgoCD, Helm, Linux  
 Supply Chain Systems: NetSuite, SAP, WMS platforms, ERP systems, Oracle SCM
@@ -23,7 +24,7 @@ CI/CD & Automation: Azure Pipelines, GitHub Actions, ArgoCD, Jenkins
 Monitoring & Logging: Prometheus, Grafana, AWS CloudWatch, Datadog, Kafka  
 Databases: MySQL, MongoDB, PostgreSQL, DynamoDB, AWS RDS, SQL Server, Redis  
 Languages: Python, Java, JavaScript, Bash, Go, Swift, Ruby  
-Other: Microservices, RESTful APIs, Infrastructure as Code (IaC), Distributed Systems, Shell Scripting, Postman
+Other: Microservices, RESTful APIs, Infrastructure as Code (IaC), Distributed Systems, Shell Scripting, Postman, API testing, CI/CD Integration, Defect Tracking, Documentation
 
 EXPERIENCE:  
 
@@ -36,6 +37,10 @@ EXPERIENCE:
 ●	Developed Ruby-based ETL pipelines for supply chain data synchronization between NetSuite ERP and MongoDB, implementing automated testing workflows and comprehensive documentation for 3rd party integrations 
 ●	Established API integrations with shipping carriers (FedEx, UPS) using Node.js and Express.js, providing customer-facing support for integration issues and achieving 99.9% uptime through Datadog monitoring 
 ●	Implemented webhook-based event processing system for inventory management using Azure Functions and Redis, enabling real-time updates across multiple WMS platforms with detailed audit logging
+● Designed and executed automated and manual test cases for cloud-based microservices, validating functional, performance, and security requirements using Cypress and Postman. 
+● Developed and maintained end-to-end API test scripts, ensuring robust data integrity and seamless integration across distributed systems. 
+● Collaborated with developers and stakeholders to define acceptance criteria, refine test strategies, and document defects in Jira, enhancing product quality and traceability. 
+● Integrated automated tests into Azure Pipelines for continuous deployment, improving release reliability and accelerating feedback cycles.
 
 
 - Fullstack Engineer, Samsung (Oct 2021 – Aug 2022)  
@@ -47,6 +52,10 @@ EXPERIENCE:
 ●	Created REST API integration framework in Go for B2B system integrations between warehouse management systems and e-commerce platforms, supporting customer integrations with comprehensive error handling 
 ●	Deployed Ruby scripts for automated EDI message validation and mapping between trading partners, reducing integration errors by 40% while maintaining detailed documentation for support teams 
 ●	Built real-time inventory synchronization platform using Kafka and PostgreSQL, integrating with multiple WMS platforms through standardized API clients and providing 3rd line support to non-technical stakeholders
+ Led the migration of test automation frameworks from legacy systems to microservices based testing, leveraging Selenium and custom scripts for comprehensive regression and performance testing. 
+ ● Built and executed automated test suites for RESTful APIs and web applications, ensuring scalability and reliability in Kubernetes-managed environments.
+ ● Implemented continuous integration of automated tests within EKS deployments using Terraform and Helm, supporting rapid, high-quality releases.
+ ● Identified, documented, and tracked software defects using Jira, collaborating closely with cross- functional teams to resolve issues and optimize system performance
 
 
 - Fullstack Engineer, Ultra Instruments & Controls (Oct 2019 – Oct 2020)  
@@ -58,6 +67,10 @@ EXPERIENCE:
 ●	Engineered ETL data pipelines using Apache NiFi for warehouse inventory tracking, processing XML feeds from WMS platforms and transforming into standardized formats for NetSuite import 
 ●	Built customer-facing integration dashboard using React, providing real-time visibility into EDI transactions, API health monitoring, and automated alerting for 3rd party system connectivity issues 
 ●	Implemented Ruby-based middleware for e-commerce platform integrations (Shopify, Magento) with Google Cloud Functions, handling order fulfillment workflows and shipping carrier integrations
+ Developed and executed automated and manual test cases for full-stack web applications deployed on GCP, ensuring functional and usability requirements were met. 
+ ● Utilized Selenium and Pytest to automate UI and API testing, integrating test execution into GitHub Actions CI/CD workflows for rapid feedback. 
+ ● Coordinated with stakeholders to gather requirements, define test plans, and communicate test results, supporting continuous improvement. 
+ ● Maintained detailed documentation of test strategies, test cases, and defect reports, ensuring transparency and traceability throughout the software lifecycle.
 
 
 PROJECTS:  
