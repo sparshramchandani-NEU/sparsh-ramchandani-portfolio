@@ -9,8 +9,49 @@ import { motion } from "framer-motion";
 
 //variants
 import { fadeIn } from "../../variants";
+import { useState } from "react";
 
 const Contact = () => {
+  const [formValues, setFormValues] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const [submitting, setSubmitting] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormValues((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const { name, email, subject, message } = formValues;
+    if (!name || !email || !subject) {
+      alert("Please fill in Name, Email, and Subject.");
+      return;
+    }
+    try {
+      setSubmitting(true);
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, subject, message }),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        throw new Error(data?.error || "Failed to send message");
+      }
+      alert("Message sent! I'll get back to you soon.");
+      setFormValues({ name: "", email: "", subject: "", message: "" });
+    } catch (err) {
+      alert(err.message || "Something went wrong. Please try again.");
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
   return (
     <div className="h-full bg-primary/30 ">
       <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
@@ -33,19 +74,51 @@ const Contact = () => {
             animate="show"
             exit="exit"
             className="flex-1 flex flex-col gap-6 w-full mx-auto"
+            onSubmit={handleSubmit}
           >
             {/* group */}
             <div className="flex gap-x-6 w-full">
-              <input type="text" placeholder="name" className="input" />
-              <input type="text" placeholder="email" className="input" />
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                className="input"
+                value={formValues.name}
+                onChange={handleChange}
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                className="input"
+                value={formValues.email}
+                onChange={handleChange}
+              />
             </div>
-            <input type="text" placeholder="subject" className="input" />
-            <textarea placeholder="message" className="textarea">
+            <input
+              type="text"
+              name="subject"
+              placeholder="Subject"
+              className="input"
+              value={formValues.subject}
+              onChange={handleChange}
+            />
+            <textarea
+              name="message"
+              placeholder="Message"
+              className="textarea"
+              value={formValues.message}
+              onChange={handleChange}
+            >
               {" "}
             </textarea>
-            <button className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group">
+            <button
+              type="submit"
+              disabled={submitting}
+              className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group disabled:opacity-60 disabled:cursor-not-allowed"
+            >
               <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
-                Let's Talk
+                {submitting ? "Sending..." : "Let's Talk"}
               </span>
               <BsArrowRight className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]" />
             </button>
