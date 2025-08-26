@@ -6,6 +6,7 @@ import Circles from "../../components/Circles";
 //framer-motion
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
+import RotatingQuotes from "../../components/RotatingQuotes";
 
 const Work = () => {
   return (
@@ -24,17 +25,14 @@ const Work = () => {
             >
               My Projects <span className="text-accent">.</span>{" "}
             </motion.h2>
-            <motion.p
+            <motion.div
               variants={fadeIn("up", 0.4)}
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quis
-              modi, vero voluptatibus quasi eveniet! Officia doloribus eum
-              accusantium aliquam
-            </motion.p>
+              <RotatingQuotes />
+            </motion.div>
           </div>
           {/* slider */}
           <motion.div

@@ -86,7 +86,7 @@ const aboutData = [
     info: [
       {
         title: "Fullstack Engineer, Bright Minds Enrichment",
-        stage: "September 2024 - Present",
+        stage: "September 2024 - May 2025",
       },
       {
         title: "Program Assistant, Northeastern University",
