@@ -93,7 +93,7 @@ const aboutData = [
         stage: "September 2023 - May 2024",
       },
       {
-        title: "Fullstack, Samsung",
+        title: "Fullstack Engineer, Samsung",
         stage: "October 2021 - August 2022",
       },
       {
