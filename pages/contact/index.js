@@ -109,9 +109,7 @@ const Contact = () => {
               className="textarea"
               value={formValues.message}
               onChange={handleChange}
-            >
-              {" "}
-            </textarea>
+            />
             <button
               type="submit"
               disabled={submitting}

@@ -5,7 +5,7 @@ import {
   RxDesktop,
   RxReader,
   RxRocket,
-  RxArrawTopRight,
+  RxArrowTopRight,
 } from "react-icons/rx";
 
 import { TfiArrowTopRight } from "react-icons/tfi";
@@ -16,31 +16,31 @@ const serviceData = [
     icon: <RxCrop />,
     title: "Branding",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    arrow: <RxArrawTopRight />,
+    arrow: <RxArrowTopRight />,
   },
   {
     icon: <RxPencil2 />,
     title: "Design",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    arrow: <RxArrawTopRight />,
+    arrow: <RxArrowTopRight />,
   },
   {
     icon: <RxDesktop />,
     title: "Development",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    arrow: <RxArrawTopRight />,
+    arrow: <RxArrowTopRight />,
   },
   {
     icon: <RxReader />,
     title: "Copywriting",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    arrow: <RxArrawTopRight />,
+    arrow: <RxArrowTopRight />,
   },
   {
     icon: <RxRocket />,
     title: "SEO",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    arrow: <RxArrawTopRight />,
+    arrow: <RxArrowTopRight />,
   },
 ];
 
