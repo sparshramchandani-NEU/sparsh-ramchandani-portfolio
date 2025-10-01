@@ -126,7 +126,7 @@ export default async function handler(req, res) {
           'Content-Type': 'application/json'
         },
         data: {
-          model: "llama3-8b-8192", // You can also use "mixtral-8x7b-32768" or other Groq models
+          model: "llama-3.1-8b-instant", // You can also use "mixtral-8x7b-32768" or other Groq models
           messages: [
             {
               role: "system",
